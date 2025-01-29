@@ -31,12 +31,12 @@
 
 
 >
-> 7. Launch the virtualenv
+> 4. Launch the virtualenv
 > ```console
 > env\Scripts\activate
 
 
-> 8. Install the dependencies:
+> 5. Install the dependencies:
 > ```console
 > pip install -r requirement.txt
 >
