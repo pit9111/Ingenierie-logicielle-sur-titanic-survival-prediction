@@ -41,4 +41,10 @@
 > ```console
 > pip install -r requirement.txt
 > ```
-> 
+>
+> 8. Install the dependencies:
+> ```console
+> pip install -r requirement.txt
+>
+> ```
+>
