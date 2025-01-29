@@ -35,10 +35,7 @@
 > ```console
 > env\Scripts\activate
 
-> ```
->
 
->
 > 8. Install the dependencies:
 > ```console
 > pip install -r requirement.txt
