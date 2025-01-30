@@ -4,24 +4,24 @@ from sklearn.model_selection import train_test_split
 from joblib import dump
 
 def train_and_save_model(train_data_path: str, test_data_path: str, output_path: str):
-    # Charger les données
+    """Charger les données"""
     train_data = pd.read_csv(train_data_path)
     test_data = pd.read_csv(test_data_path)
     
-    # Sélection des caractéristiques et de la cible
+    """ Sélection des caractéristiques et de la cible"""
     y = train_data["Survived"]
     features = ["Pclass", "Sex", "SibSp", "Parch"]
     X = pd.get_dummies(train_data[features])
     X_test = pd.get_dummies(test_data[features])
     
-    # Division en ensemble d'entraînement et de validation
+    """ Division en ensemble d'entraînement et de validation"""
     X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=1)
     
-    # Initialisation et entraînement du modèle
+    """ Initialisation et entraînement du modèle"""
     model = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=1)
     model.fit(X_train, y_train)
     
-    # Prédictions
+    """ Prédictions"""
     predictions = model.predict(X_test)
     
     # Sauvegarde des prédictions
