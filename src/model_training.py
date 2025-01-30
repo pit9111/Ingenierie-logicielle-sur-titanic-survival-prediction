@@ -24,7 +24,7 @@ def train_and_save_model(train_data_path: str, test_data_path: str, output_path:
     """ Prédictions"""
     predictions = model.predict(X_test)
     
-    # Sauvegarde des prédictions
+    """ Sauvegarde des prédictions"""
     output = pd.DataFrame({'PassengerId': test_data.PassengerId, 'Survived': predictions})
     output.to_csv(output_path, index=False)
     print("Prédictions sauvegardées avec succès dans", output_path)
