@@ -1,6 +1,23 @@
-# Ing-nierie-logicielle-sur-titanic-survival-prediction
+# Ingenierie logicielle sur titanic survival prediction
+Project Objectives
 
+The objective of this project is to predict the survival of Titanic passengers using data analysis and machine learning techniques. With the available data, we will identify factors influencing survival and train classification models to predict passenger survival rates.
 
+Project Structure
+TITANIC/
+├── data/
+│   ├── gender_submission.csv
+│   ├── test.csv
+│   └── train.csv
+├── env/
+├── src/
+│   ├── data_preprocessing.py
+│   ├── model_evaluation.py
+│   ├── model_training.py
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── titanic-tutorial.ipynb
 
 ##  Getting Started
 
