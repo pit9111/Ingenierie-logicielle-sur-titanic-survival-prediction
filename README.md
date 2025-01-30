@@ -56,7 +56,7 @@ TITANIC/
 
 > 5. Install the dependencies:
 > ```console
-> pip install -r requirement.txt
+> pip install -r requirements.txt
 >
 > ```
 >
