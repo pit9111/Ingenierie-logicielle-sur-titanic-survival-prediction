@@ -110,3 +110,4 @@ def test_save_predictions(tmp_path, sample_test_data):
     assert not saved_df.empty, "Le fichier de sortie ne doit pas être vide."
     assert list(saved_df.columns) == ["PassengerId", "Survived"], "Les colonnes du fichier doivent être 'PassengerId' et 'Survived'."
     assert len(saved_df) == len(predictions), "Le fichier de sortie doit contenir autant de lignes que de prédictions."
+    
