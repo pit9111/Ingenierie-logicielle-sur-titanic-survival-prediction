@@ -1,6 +1,8 @@
 import pytest
 import pandas as pd
 import numpy as np
+import sys
+sys.path.append("../src")  # Adapter si nécessaire
 from model_evaluation import load_test_data, make_predictions, save_predictions
 
 class FakeModel:
