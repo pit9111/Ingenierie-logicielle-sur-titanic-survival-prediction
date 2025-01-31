@@ -66,3 +66,4 @@ if __name__ == "__main__":
     model = load_model(model_path)
     predictions = make_predictions(model, X_test)
     save_predictions(test_data, predictions, output_path)
+    
