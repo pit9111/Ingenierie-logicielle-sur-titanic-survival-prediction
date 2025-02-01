@@ -6,19 +6,28 @@ The objective of this project is to predict the survival of Titanic passengers u
 Project Structure
 ```sh
 TITANIC/
+├── .github/
+│   └── workflows/
+│       ├── ci.yml  # GitHub Actions pour CI/CD
 ├── data/
 │   ├── gender_submission.csv
 │   ├── test.csv
 │   └── train.csv
-├── env/
 ├── src/
+│   ├── __init__.py  # Fichier permettant l'import en tant que package
 │   ├── data_preprocessing.py
 │   ├── model_evaluation.py
 │   ├── model_training.py
-├── .gitignore
+├── tests/
+│   ├── test_data_preprocessing.py
+│   ├── test_model_evaluation.py
+│   ├── test_model_training.py
+├── .gitignore  # Ignore les fichiers inutiles pour Git
 ├── README.md
-├── requirements.txt
-└── titanic-tutorial.ipynb
+├── requirements.txt  # Liste des dépendances du projet
+├── titanic-tutorial.ipynb  # Notebook Jupyter pour analyse exploratoire
+
+
 ```
 ##  Getting Started
 
